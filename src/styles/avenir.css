@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 700;
+  font-style: normal;
+  src: url('@src/assets/fonts/avenir/AvenirBlack.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 400;
+  font-style: normal;
+  src: url('@src/assets/fonts/avenir/AvenirBook.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 300;
+  font-style: normal;
+  src: url('@src/assets/fonts/avenir/AvenirRoman.otf') format('opentype');
+  font-display: swap;
+}

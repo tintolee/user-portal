@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1" />
+    <meta name="theme-color" content="#17342E" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+  <body>
+    <noscript
+      class="ss-p-4 ss-text-center ss-font-body ss-block ss-text-neutral-100 ss-bg-warning-60"
+      >You need to enable JavaScript to run this app.</noscript
+    >
+    <div id="root"></div>
+    <!--<div id="simpu-whatsapp-widget"></div>
+    <script>
+      (function (doc, tag, id) {
+        var js = doc.getElementsByTagName(tag)[0];
+        if (doc.getElementById(id)) {
+          return;
+        }
+        js = doc.createElement(tag);
+        js.id = id;
+        js.src = "https://static.simpu.co/widgets/v1/whatsapp.js";
+        js.type = "text/javascript";
+        doc.body.appendChild(js);
+        js.onload = function () {
+          SimpuWhatsapp.setOptions({
+            text: "Hi Sprint team, I have a question...",
+            phoneNumber: "%REACT_APP_SIMPU_WIDGET_WHATSAPP_PHONE_NUMBER%",
+            buttonText: "Contact us",
+          });
+          SimpuWhatsapp.render();
+        };
+      })(document, "script", "simpu-widget");
+    </script>-->
+
+    <script defer>
+      window.intercomSettings = {
+        app_id: 'nlqbzfmw' /*,
+        name: "Test Guest", // Full name
+        email: "guest@sendsprint.com", // Email address
+        created_at: "1312182000"*/ // Signup date as a Unix timestamp
+      };
+    </script>
+
+    <script defer>
+      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/nlqbzfmw'
+      (function () {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === 'function') {
+          ic('reattach_activator');
+          ic('update', w.intercomSettings);
+        } else {
+          var d = document;
+          var i = function () {
+            i.c(arguments);
+          };
+          i.q = [];
+          i.c = function (args) {
+            i.q.push(args);
+          };
+          w.Intercom = i;
+          var l = function () {
+            var s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://widget.intercom.io/widget/nlqbzfmw';
+            var x = d.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          };
+          if (document.readyState === 'complete') {
+            l();
+          } else if (w.attachEvent) {
+            w.attachEvent('onload', l);
+          } else {
+            w.addEventListener('load', l, false);
+          }
+        }
+      })();
+    </script>
+    <!-- <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPhgdqL-I4165GdRu7rvWSjxVGFvYjOPI&libraries=places&callback=initMap"
+    ></script>
+    <script>
+      function initMap() {}
+      function ActivateAddressValidation() {
+        setTimeout(function () {
+          //alert("It was called");
+          //const autocomplete = new google.maps.places.Autocomplete(document.getElementById("streetAddress"), {});
+          const center = { lat: 50.064192, lng: -130.605469 };
+          // Create a bounding box with sides ~10km away from the center point
+          const defaultBounds = {
+            north: center.lat + 0.1,
+            south: center.lat - 0.1,
+            east: center.lng + 0.1,
+            west: center.lng - 0.1,
+          };
+          const input = document.getElementsByClassName("streetAddress")[0];
+          // const input = document.getElementsByName("streetAddress")[0];
+          const options = {
+            bounds: defaultBounds,
+            componentRestrictions: { country: "us" },
+            fields: ["address_components", "geometry", "icon", "name"],
+            strictBounds: false,
+            types: ["establishment"],
+          };
+          const autocomplete = new google.maps.places.Autocomplete(
+            input,
+            options
+          );
+        }, 1000);
+      }
+    </script> -->
+
+    <!-- <script
+      type="text/javascript"
+      id="SCRIPT_TAG_ID"
+      crossorigin="use-credentials"
+      src="https://d1cpeeqh895y9e.cloudfront.net/s/407520/dvFxDq.js"
+      async
+    ></script> -->
+    <style>
+      @media print and (min-width: 480px) {
+        .print-button {
+          display: none;
+        }
+      }
+    </style>
+  </body>
+</html>

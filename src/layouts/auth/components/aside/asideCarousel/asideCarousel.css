@@ -1,0 +1,19 @@
+.aside-carousel {
+  padding-bottom: 70px;
+}
+
+.aside-carousel .swiper-pagination {
+  @apply ss-flex;
+}
+
+.aside-carousel-pagination-item {
+  width: 96px;
+  height: 8px;
+  border-radius: 8px;
+
+  @apply ss-bg-primary1-300 ss-flex-1;
+}
+
+.aside-carousel-pagination-item.swiper-pagination-bullet-active {
+  @apply ss-bg-primary1-50;
+}

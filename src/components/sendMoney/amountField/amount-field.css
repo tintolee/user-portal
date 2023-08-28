@@ -1,0 +1,12 @@
+.ss-amount-field {
+  @apply ss-border ss-text-paragraph-regular ss-px-4 ss-rounded-base ss-block ss-w-full focus:ss-focus-ring ss-bg-neutral-100 ss-placeholder-neutral-400 ss-text-neutral-500 ss-border-neutral-300 ss-p-4 ss-pt-10 ss-border-r-0 ss-border-none ss-rounded-r-none hover:ss-border-neutral-100 focus:ss-border-primary1-100;
+}
+
+.ss-amount-field::-webkit-inner-spin-button,
+.ss-amount-field::-webkit-outer-spin-button {
+  @apply ss-appearance-none ss-m-0;
+}
+
+.ss-amount-field--invalid {
+  @apply ss-border-error-100 hover:ss-border-error-100 focus:ss-border-error-100;
+}
